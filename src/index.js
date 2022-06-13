@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom";
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Barras from './components/barras';
+import Scatter from './components/scatter';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.render(
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+        
+    <div className="row">
+        
+        <div className="barraTopo">
+        
+        </div>
+        <div>
+        <button><img className="iconBtn" src="https://upload.wikimedia.org/wikipedia/commons/1/14/Filter_font_awesome.svg"></img>Filtrar</button>
+            <h1>Dashboard</h1>
+            <p className="subtitulo">Desafio Técnico Frontend</p>
+        </div>
+        <div className="conteudo">
+            <Barras></Barras>
+            <Scatter></Scatter>,
+        </div>
+    </div>,
+    document.getElementById("root")
+)
